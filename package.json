@@ -9,6 +9,10 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@storybook/addon-a11y": "^6.2.9",
+    "@storybook/addon-knobs": "^6.2.9",
+    "@storybook/addon-storysource": "^6.2.9",
+    "@storybook/preset-scss": "^1.0.3",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -23,6 +27,7 @@
     "babel-loader": "^8.2.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "storybook-dark-mode": "^1.0.7",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.11"
   }
