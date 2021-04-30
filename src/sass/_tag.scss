@@ -1,0 +1,26 @@
+@import 'colors';
+@import 'font';
+
+.tag {
+	@include text(400, 12px, 16px);
+	outline: none;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 80px;
+	width: fit-content;
+}
+
+.tag-Default {
+	background: rgba(41, 48, 66, 0.5);
+	color: $snow;
+}
+
+.tag-Positive {
+	background: $green;
+	color: $snow;
+}
+
+.tag-Negative {
+	background: $red;
+	color: $snow;
+}
