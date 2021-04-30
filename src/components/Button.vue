@@ -3,7 +3,8 @@
 </template>
 
 <script>
-import '../sass/_button.scss';
+// import '../sass/_button.scss';
+import '!style-loader!css-loader!sass-loader!../sass/_button.scss';
 
 export default {
 	name: 'Button',
@@ -16,14 +17,14 @@ export default {
 		variant: {
 			type: String,
 			default: 'Primary',
-			validator: function(value) {
+			validator: function (value) {
 				return ['Primary', 'Secondary', 'Delete', 'Blank'].indexOf(value) !== -1;
 			}
 		},
 		size: {
 			type: String,
 			default: 'Medium',
-			validator: function(value) {
+			validator: function (value) {
 				return ['Small', 'Medium', 'Large'].indexOf(value) !== -1;
 			}
 		}

@@ -6,7 +6,6 @@ module.exports = {
 		'storybook-dark-mode',
 		'@storybook/addon-a11y',
 		'@storybook/addon-storysource',
-		'@storybook/addon-knobs',
 		{
 			name: '@storybook/preset-scss',
 			options: {
