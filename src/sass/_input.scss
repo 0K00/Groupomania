@@ -15,7 +15,7 @@
 		border: none;
 		background: $gray-10;
 		color: $gray-100;
-		transition: 0.3s ease-in-out;
+		transition: filter 0.3s ease-in-out;
 		&::placeholder {
 			color: $gray-50;
 		}
@@ -24,7 +24,7 @@
 		}
 		&:active,
 		&:focus {
-			box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+			border: 1px solid $gray-50;
 		}
 	}
 }

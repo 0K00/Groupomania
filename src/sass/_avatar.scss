@@ -1,0 +1,24 @@
+@import 'colors';
+
+.avatar {
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;
+	background: $blue-50;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.avatar-Medium {
+	height: 60px;
+	width: 60px;
+}
+
+.avatar-Small {
+	height: 32px;
+	width: 32px;
+}
