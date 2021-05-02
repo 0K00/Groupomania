@@ -19,9 +19,7 @@
 		&::placeholder {
 			color: $gray-50;
 		}
-		&:hover {
-			filter: brightness(96%);
-		}
+		&:hover,
 		&:active,
 		&:focus {
 			filter: brightness(96%);
