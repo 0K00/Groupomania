@@ -1,5 +1,8 @@
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
+	grid: {
+		cellSize: 24
+	},
 	backgrounds: {
 		default: 'Light',
 		values: [
