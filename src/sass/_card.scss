@@ -12,6 +12,7 @@
 	border-radius: 24px;
 	margin-bottom: 16px;
 	overflow: hidden;
+	position: relative;
 
 	img {
 		width: 100%;
@@ -24,4 +25,22 @@
 	@include text(600, 14px, 20px);
 	color: $gray-50;
 	margin-bottom: 16px;
+}
+
+.card-Mobile {
+	.card-img {
+		max-width: 366px;
+		max-height: 366px;
+		padding-top: 100%;
+		width: 100%;
+		height: 100%;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
 }
