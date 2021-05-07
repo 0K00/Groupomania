@@ -1,0 +1,33 @@
+@import 'font';
+
+.tab {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: $gray-100;
+	transition: 0.3s ease-in-out;
+	width: fit-content;
+
+	[class^='icon-']:before,
+	[class*=' icon-']:before {
+		font-size: 24px;
+		margin-right: 16px;
+	}
+
+	&-text {
+		@include text(500, 16px, 24px);
+		display: none;
+	}
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $blue-50;
+	}
+}
+
+.tab-Desktop {
+	.tab-text {
+		display: inherit;
+	}
+}

@@ -36,3 +36,65 @@
 .text-gray-50 {
 	color: $gray-50;
 }
+
+$fontlink: '../assets/font/';
+
+@font-face {
+	font-family: 'icons';
+	src: url($fontlink + 'icons.eot?26588798');
+	src: url($fontlink + 'icons.eot?26588798#iefix') format('embedded-opentype'),
+		url($fontlink + 'icons.woff2?26588798') format('woff2'),
+		url($fontlink + 'icons.woff?26588798') format('woff'),
+		url($fontlink + 'icons.ttf?26588798') format('truetype'),
+		url($fontlink + 'icons.svg?26588798#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	font-family: 'icons';
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: 0.2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: 0.2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: '\e800';
+}
+.icon-search:before {
+	content: '\e801';
+}
+.icon-plus:before {
+	content: '\e802';
+}
+.icon-user:before {
+	content: '\e803';
+}
+.icon-logout:before {
+	content: '\e804';
+}
+.icon-heart:before {
+	content: '\e805';
+}
+.icon-comment:before {
+	content: '\e806';
+}
+.icon-cancel:before {
+	content: '\e807';
+}
+.icon-angle-right:before {
+	content: '\f105';
+}
