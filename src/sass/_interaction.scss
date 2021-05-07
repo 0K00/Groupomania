@@ -1,0 +1,32 @@
+@import 'font';
+
+.int {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: none;
+	display: flex;
+	align-items: center;
+	@include text(700, 16px, 24px);
+
+	&-value {
+		color: $gray-100;
+	}
+
+	.icon-heart {
+		font-size: 20px;
+		margin-right: 4px;
+		color: $gray-50;
+		transition: 0.3s ease-in-out;
+	}
+}
+
+.int:hover .icon-heart {
+	color: $blue-10;
+}
+.int:active .icon-heart {
+	transform: scale(1.2);
+}
+.int:focus .icon-heart {
+	color: $red;
+}
