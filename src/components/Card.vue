@@ -4,7 +4,7 @@
 		<div class="card-img">
 			<img :src="imgLink" alt="" />
 		</div>
-		<div class="card-content">{{ text }}</div>
+		<div class="card-content">{{ desc }}</div>
 		<Int v-bind:value="value" />
 	</div>
 </template>
@@ -43,7 +43,7 @@ export default {
 			type: String,
 			required: true
 		},
-		text: {
+		desc: {
 			type: String,
 			required: true
 		},

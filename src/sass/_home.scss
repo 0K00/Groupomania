@@ -1,0 +1,101 @@
+@import 'font';
+
+* {
+	margin: 0;
+	padding: 0;
+	background: $snow;
+}
+
+#home {
+	background: $snow;
+
+	@media (min-width: 1128px) {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	@media (max-width: 1128px) {
+		h1 {
+			@include text(700, 32px, 0px);
+			margin-bottom: 64px;
+			margin-top: 24px;
+		}
+		padding: 18px;
+		.card-container {
+			margin-left: 50vw;
+			transform: translateX(-50%);
+		}
+	}
+	@media (max-width: 500px) {
+		padding: 18px;
+		.card-container {
+			margin-left: 0vw;
+			transform: translateX(0%);
+		}
+	}
+}
+
+aside {
+	margin-right: 24px;
+	margin-top: 80px;
+	position: relative;
+
+	.menu {
+		position: fixed;
+		left: 48px;
+
+		.tab:first-child {
+			color: $blue-50;
+		}
+	}
+
+	h1 {
+		@include text(700, 40px, 0px);
+		margin-bottom: 80px;
+	}
+
+	.user {
+		margin-bottom: 48px;
+	}
+
+	.trademark {
+		@include text(400, 14px, 20px);
+		color: $gray-50;
+		max-width: 160px;
+		margin-top: 96px;
+	}
+}
+
+main {
+	.input {
+		background: $snow;
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+		padding-top: 60px;
+	}
+	.card-container {
+		@media (min-width: 1128px) {
+			overflow: hidden;
+			margin-top: 164px;
+		}
+		margin-bottom: 64px;
+	}
+	.card {
+		margin-bottom: 48px;
+	}
+
+	.tabbar {
+		position: fixed;
+		z-index: 1;
+		bottom: 0;
+		padding: 18px 0;
+		margin: 0 auto;
+		width: calc(100vw - 18px);
+
+		.tab:first-child {
+			color: $blue-50;
+		}
+	}
+}

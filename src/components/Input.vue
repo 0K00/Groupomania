@@ -1,7 +1,7 @@
 <template>
 	<div :class="classes">
 		<label :for="label">{{ label }}</label>
-		<input type="text" :id="label" :placeholder="placeholder" :value="value" />
+		<input :type="type" :id="label" :placeholder="placeholder" :value="value" />
 	</div>
 </template>
 
@@ -24,6 +24,13 @@ export default {
 		placeholder: {
 			type: String,
 			required: true
+		},
+		type: {
+			type: String,
+			default: 'text',
+			validator: function (value) {
+				return ['text', 'password'].indexOf(value) !== -1;
+			}
 		},
 		shape: {
 			type: String,

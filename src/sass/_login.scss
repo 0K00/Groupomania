@@ -1,0 +1,30 @@
+@import 'font';
+
+* {
+	margin: 0;
+	padding: 0;
+	background: $snow;
+}
+
+.login {
+	padding: 18px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 128px auto;
+
+	h2 {
+		margin-bottom: 24px;
+	}
+
+	a {
+		margin-top: 12px;
+		align-self: flex-end;
+	}
+}
