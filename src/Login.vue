@@ -18,8 +18,9 @@
 				placeholder="Enter your password"
 			/>
 			<Button size="Large" label="Sign In" />
-			<a class="text-m text-gray-50 text-not_underline" href="#">Sign up</a>
+			<router-link class="text-m text-gray-50 text-not_underline" to="signup">Sign up</router-link>
 		</div>
+		<router-view></router-view>
 	</div>
 </template>
 

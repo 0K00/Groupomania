@@ -65,6 +65,7 @@
 				</div>
 			</main>
 		</show-at>
+		<router-view></router-view>
 	</div>
 </template>
 
