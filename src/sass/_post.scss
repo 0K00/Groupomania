@@ -6,12 +6,12 @@
 	background: $snow;
 }
 
-#home {
+#post {
 	background: $snow;
 
 	aside {
 		.menu {
-			.tab:nth-child(1) {
+			.tab:nth-child(0) {
 				color: $blue-50;
 			}
 		}

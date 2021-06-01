@@ -11,6 +11,7 @@
 	"dependencies": {
 		"@storybook/addon-a11y": "^6.2.9",
 		"@storybook/addon-storysource": "^6.2.9",
+		"axios": "^0.21.1",
 		"core-js": "^3.6.5",
 		"vue": "^2.6.11",
 		"vue-breakpoints": "^1.1.0",

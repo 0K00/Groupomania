@@ -1,7 +1,7 @@
 <template>
 	<div :class="classes">
 		<label :for="label">{{ label }}</label>
-		<input :type="type" :id="label" :placeholder="placeholder" :value="value" />
+		<input :@change="change" :type="type" :id="label" :placeholder="placeholder" :value="value" />
 	</div>
 </template>
 
@@ -18,6 +18,10 @@ export default {
 			required: true
 		},
 		value: {
+			type: String,
+			required: false
+		},
+		change: {
 			type: String,
 			required: false
 		},

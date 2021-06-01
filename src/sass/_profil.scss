@@ -1,0 +1,42 @@
+@import 'font';
+
+#profil {
+	aside {
+		.menu {
+			.tab:nth-child(4) {
+				color: $blue-50;
+			}
+		}
+	}
+	.tab:nth-child(4) {
+		color: $blue-50;
+	}
+}
+
+.container {
+	padding: 18px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+#btnModify {
+	width: 100%;
+}
+
+#btnDelete {
+	width: 100%;
+	margin-top: 48px;
+}
+
+.mobile {
+	.tabbar {
+		position: fixed;
+		z-index: 1;
+		bottom: 0;
+		padding: 18px 0;
+		margin: 0 auto;
+		width: calc(100vw - 18px);
+	}
+}

@@ -1,5 +1,5 @@
 <template>
-	<button type="button" :class="classes">{{ label }}</button>
+	<button :type="type" :id="id" :class="classes">{{ label }}</button>
 </template>
 
 <script>
@@ -11,6 +11,14 @@ export default {
 
 	props: {
 		label: {
+			type: String,
+			required: true
+		},
+		type: {
+			type: String,
+			required: true
+		},
+		id: {
 			type: String,
 			required: true
 		},

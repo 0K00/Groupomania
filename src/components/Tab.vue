@@ -1,8 +1,8 @@
 <template>
-	<a :href="link" :class="classes">
+	<router-link :to="link" :class="classes">
 		<div :class="'icon-' + icons"></div>
 		<div class="tab-text">{{ text }}</div>
-	</a>
+	</router-link>
 </template>
 
 <script>
